@@ -3,5 +3,4 @@ class Diary:
         self.contents = contents
 
     def read(self):
-        print (self.contents)
         return self.contents
