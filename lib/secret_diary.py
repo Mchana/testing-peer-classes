@@ -1,7 +1,10 @@
+from lib.diary import Diary
+
 class SecretDiary:
     def __init__(self, diary):
-        # diary is an instance of Diary
-        pass
+        diary = Diary()
+        self.diary = diary
+        self.diary.lock = "locked"
 
     def read(self):
         # Raises the error "Go away!" if the diary is locked
